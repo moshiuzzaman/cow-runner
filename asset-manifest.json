@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d9f5f865.chunk.css",
+    "main.js": "/static/js/main.05d4e0ae.chunk.js",
+    "main.js.map": "/static/js/main.05d4e0ae.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0753f93b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0753f93b.js.map",
+    "static/js/2.1c691714.chunk.js": "/static/js/2.1c691714.chunk.js",
+    "static/js/2.1c691714.chunk.js.map": "/static/js/2.1c691714.chunk.js.map",
+    "static/js/3.542864ec.chunk.js": "/static/js/3.542864ec.chunk.js",
+    "static/js/3.542864ec.chunk.js.map": "/static/js/3.542864ec.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.d9f5f865.chunk.css.map": "/static/css/main.d9f5f865.chunk.css.map",
+    "static/js/2.1c691714.chunk.js.LICENSE.txt": "/static/js/2.1c691714.chunk.js.LICENSE.txt",
+    "static/media/01-min.6420e751.png": "/static/media/01-min.6420e751.png",
+    "static/media/02-min.c1e91c48.png": "/static/media/02-min.c1e91c48.png",
+    "static/media/03-min.0b584d19.png": "/static/media/03-min.0b584d19.png",
+    "static/media/04-min.25bc0858.png": "/static/media/04-min.25bc0858.png",
+    "static/media/05-min.1a95094c.png": "/static/media/05-min.1a95094c.png",
+    "static/media/06-min.bf151ad2.png": "/static/media/06-min.bf151ad2.png",
+    "static/media/index.css": "/static/media/Poppins-Medium.673ed423.ttf",
+    "static/media/Music-JTI.7f56d715.mp3": "/static/media/Music-JTI.7f56d715.mp3",
+    "static/media/Road-new.e56aa621.png": "/static/media/Road-new.e56aa621.png",
+    "static/media/App.css": "/static/media/SiyamRupaliANSI.afe038d6.ttf",
+    "static/media/bangladesh.65807db5.png": "/static/media/bangladesh.65807db5.png",
+    "static/media/loadingbar.css": "/static/media/bg.eed02beb.png",
+    "static/media/breaker-new.8228531e.png": "/static/media/breaker-new.8228531e.png",
+    "static/media/hdr.508c1b32.hdr": "/static/media/hdr.508c1b32.hdr",
+    "static/media/head.9f1dd2af.glb": "/static/media/head.9f1dd2af.glb",
+    "static/media/jtiBreaker-new.53f88270.png": "/static/media/jtiBreaker-new.53f88270.png",
+    "static/media/jtiPlane-new.8b7ba118.png": "/static/media/jtiPlane-new.8b7ba118.png",
+    "static/media/nglass.f902ce94.glb": "/static/media/nglass.f902ce94.glb",
+    "static/media/toon.4f955f9a.mp3": "/static/media/toon.4f955f9a.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0753f93b.js",
+    "static/js/2.1c691714.chunk.js",
+    "static/css/main.d9f5f865.chunk.css",
+    "static/js/main.05d4e0ae.chunk.js"
+  ]
+}

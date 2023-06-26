@@ -1,0 +1,183 @@
+/* div#Gamemain {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    
+} */
+div#Gamemain {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    height: 100vh;
+    bottom: -30px;
+}
+#Gamegroup {
+    left: -200px;
+    position: absolute;
+    bottom: 18px;
+}
+div#Gamebody {
+   
+}
+#Gameroad {
+    position: absolute;
+    bottom: 0;
+    width: 5200px;
+
+}
+#Gamebr {
+    position: absolute;
+    bottom: 0;
+    width: 5200px;
+}
+#gamePlane{
+     position: absolute;
+    bottom: 70px;
+    width: 5200px;
+    z-index: 0;
+}
+.restart__button__wrapper {
+  transform: rotate(0deg);
+  flex-direction: column;
+  /* position:initial */
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+ .restart_button {
+
+  margin-bottom: 25px;
+  width: 50px;
+  height: 50px;
+}
+#Gamecamel{
+    position: absolute;
+    width: 112px;
+    left: 100px;
+    bottom: 63px;
+}
+#Gamegroup{
+    
+}
+/* #main_canvas{
+    height: 100% !important;
+} */
+#game_coundown #countdown {
+    z-index: 444;
+    background: -webkit-linear-gradient( 75deg, rgba(242, 242, 242, 1) 15%, rgba(125, 125, 125, 1) 50%, rgba(242, 242, 242, 1) 85% ) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    text-align: center;
+    transform: skewX(0deg);
+    
+}
+
+/* Background styles */
+.restart__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 48746846;
+  }
+  
+  @media screen and (min-width: 500px) {
+    .restart__wrapper {
+      height: 100vh;
+      max-width: 400px;
+      /* border: 2px solid red; */
+    }
+  }
+  
+  /* Card styles */
+  .restart__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    /* background-image: var(--backgroundGradient); */
+    background-color: #063a61b8;
+    background-size: 400%;
+    animation: bg-animation 3s infinite alternate;
+    padding: 1rem;
+  }
+  
+  /* .av_container {
+    height: 100%;
+    width: 100vh;
+  }
+   */
+  .video_av_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    object-fit: contain !important;
+    /* transform: rotate(10deg); */
+  }
+  
+  @keyframes bg-animation {
+    0% {
+      background-position: left;
+    }
+    100% {
+      background-position: right;
+    }
+  }
+  
+  /* Rotating the card */
+  .restart__card {
+    /* transform: rotate(10deg); */
+  }
+  
+  /* Reset child rotations */
+  .restart__info {
+    position: absolute;
+    top: 20%;
+  }
+  .restart__button__wrapper{
+    bottom: 35%;
+  }
+  .restart__button__wrapper p{
+    transform: skewX(0deg);
+    font-size: 18px;
+}
+  h3.restart_title-one {
+    font-size: 50px;
+    transform: skewX(0deg);
+    margin: 10px;
+}
+h3.restart_title-two {
+  font-size: 2em;
+  margin-top: 10px;
+  transform: skewX(0deg);
+}
+
+
+#countdown {
+  position: absolute;
+  
+  transition: 1s;
+  font-size: 0px;
+  color: #040; 
+  transition: all .5s;
+}
+div#game_coundown {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div#registration_card_animation {
+  transform: scale(0);
+}

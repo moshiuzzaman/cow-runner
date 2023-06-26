@@ -1,0 +1,230 @@
+/* * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Camel !important;
+} */
+
+.main {
+  width: 60%;
+  height: 100vh;
+  position: relative;
+  margin: auto;
+}
+
+.camera-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* .webcam {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+} */
+
+video {
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+}
+
+.canvas {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  text-align: center;
+  z-index: 9;
+  width: 100%;
+  height: 100vh;
+}
+
+.capture {
+  text-align: center;
+  width: 100%;
+  height: 15vh;
+  background-color: black;
+  margin-top: -4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.capture img {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.camel-bg {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 123456;
+  height: 12vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.camel-bg .border {
+  width: 100%;
+  border-top: 1px solid white;
+  margin-top: 25px;
+  display: flex;
+}
+
+.camel-bg .border .border1 {
+  width: 50%;
+  height: 20px;
+  border-right: 2px solid white;
+  display: flex;
+}
+
+.camel-bg .border .border1 .border11 {
+  width: 30%;
+  height: 10px;
+  border-right: 2px solid white;
+  display: flex;
+}
+
+.camel-bg .border .border2 {
+  width: 50%;
+  height: 20px;
+  display: flex;
+}
+
+.camel-bg .border .border2 .border21 {
+  width: 70%;
+  height: 10px;
+  border-right: 2px solid white;
+  display: flex;
+}
+
+.camel {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 25px;
+}
+
+.camel img:hover {
+  cursor: pointer;
+}
+
+.order1 {
+  order: 1;
+}
+
+.order2 {
+  order: 2;
+}
+
+.order3 {
+  order: 3;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+  }
+  .camel {
+    width: 80%;
+  }
+
+  .camel-bg .border .border1 .border11 {
+    width: 45%;
+  }
+
+  .camel-bg .border .border2 .border21 {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .camel {
+    width: 70%;
+  }
+
+  .camel-bg .border .border1 .border11 {
+    width: 50%;
+  }
+
+  .camel-bg .border .border2 .border21 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .camel {
+    width: 80%;
+  }
+
+  .capture img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .camel-bg .border .border1 .border11 {
+    width: 45%;
+  }
+
+  .camel-bg .border .border2 .border21 {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .camel {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .camel {
+    width: 80%;
+  }
+
+  .capture img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-height: 768px) {
+  .capture img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .capture img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .capture img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .capture img {
+    width: 25px;
+    height: 25px;
+  }
+}

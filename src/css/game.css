@@ -1,0 +1,550 @@
+/* div#Gamemain {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    
+} */
+#loading_container,
+#spinerFullWidth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw !important;
+  
+}
+
+div#gamesec {
+  max-width: 460px;
+}
+div#root,
+#loading_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div#Gamemain {
+  position: absolute;
+  max-width: 460px;
+  width: 100%;
+  left: 0;
+  overflow: hidden;
+  height: 100vh;
+  bottom: -30px;
+}
+#Gamegroup {
+  left: -200px;
+  position: absolute;
+  bottom: 18px;
+}
+div#Gamebody {
+}
+#Gameroad {
+  position: absolute;
+  bottom: 0;
+  width: 9770px;
+}
+#Gamebr {
+  position: absolute;
+  bottom: 0;
+  width: 9770px;
+}
+#gamePlane {
+  position: absolute;
+  bottom: 70px;
+  width: 9770px;
+  z-index: 0;
+}
+.restart__button__wrapper {
+  transform: rotate(0deg);
+  flex-direction: column;
+  /* position:initial */
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.restart_button {
+  margin-bottom: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#Gamecamel {
+  position: absolute;
+  width: 112px;
+  left: 80px;
+  bottom: 63px;
+}
+#Gamegroup {
+}
+/* #main_canvas{
+  height: 100% !important;
+} */
+#game_coundown #countdown {
+  z-index: 444;
+  background: -webkit-linear-gradient(
+    75deg,
+    rgba(242, 242, 242, 1) 15%,
+    rgba(125, 125, 125, 1) 50%,
+    rgba(242, 242, 242, 1) 85%
+  ) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-align: center;
+  transform: skewX(0deg);
+}
+
+/* Background styles */
+.restart__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 48746846;
+}
+
+@media screen and (min-width: 500px) {
+  .restart__wrapper {
+    height: 100vh;
+    max-width: 400px;
+    /* border: 2px solid red; */
+  }
+}
+
+/* Card styles */
+.restart__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  /* background-image: var(--backgroundGradient); */
+  background-color: #063a61b8;
+  background-size: 400%;
+  animation: bg-animation 3s infinite alternate;
+  padding: 1rem;
+  z-index: 445;
+}
+
+/* .av_container {
+  height: 100%;
+  width: 100vh;
+}
+ */
+.video_av_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  object-fit: contain !important;
+  /* transform: rotate(10deg); */
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+/* Rotating the card */
+.restart__card {
+  /* transform: rotate(10deg); */
+}
+
+/* Reset child rotations */
+.restart__info {
+  position: absolute;
+  top: 20%;
+}
+.restart__button__wrapper {
+  bottom: 35%;
+}
+.restart__button__wrapper p {
+  transform: skewX(0deg);
+  font-size: 18px;
+}
+h3.restart_title-one {
+  font-size: 50px;
+  transform: skewX(0deg);
+  margin: 10px;
+  color: #ffffff !important;
+}
+h3.restart_title-two {
+  font-size: 2em;
+  margin-top: 10px;
+  transform: skewX(0deg);
+}
+
+#countdown {
+  position: absolute;
+}
+div#game_coundown {
+  max-width: 460px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 444;
+  font-family: 'Camel' !important;
+}
+div#registration_card_animation {
+  transform: scale(0);
+}
+img#GameBangladeshImage {
+  bottom: 260px;
+  position: absolute;
+  transform: scale(0);
+  width: 232px;
+}
+
+div#bangladeshImage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.countdown .count_number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(270deg);
+}
+.count_number_Go {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(270deg);
+}
+
+.countdown .count_number:nth-child(1) {
+  animation-delay: 4s;
+}
+
+.countdown .count_number:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.countdown .count_number:nth-child(3) {
+  animation-delay: 6s;
+}
+
+.countdown .count_number_Go:nth-child(1) {
+  animation-delay: 7s;
+  font-size: 10px !important;
+}
+
+.countdown .count_number h2,
+.count_number_Go h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 125px;
+  font-family: 'Camel' !important;
+  transform: skewX(0deg);
+  background: -webkit-linear-gradient(
+    75deg,
+    rgba(242, 242, 242, 1) 15%,
+    rgba(125, 125, 125, 1) 50%,
+    rgba(242, 242, 242, 1) 85%
+  ) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+@keyframes count_animate {
+  0% {
+    transform: rotateY(90deg);
+  }
+  18%,
+  100% {
+    transform: rotateY(-90deg);
+  }
+}
+@keyframes count_animate1 {
+  0% {
+    transform: rotateY(90deg);
+  }
+  20% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+/* Av page video css */
+
+#video::-webkit-media-controls-play-button {
+  display: none;
+  background-color: blue;
+  top: -50%;
+}
+#video::-webkit-media-controls-timeline {
+  top: -7%;
+  position: relative !important;
+  width: 80%;
+  left: 7%;
+}
+#video::-webkit-media-controls-current-time-display {
+  display: none;
+}
+#video::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+#video::-webkit-media-controls-fullscreen-button {
+  display: none;
+}
+
+#video::-webkit-media-controls-mute-button {
+  display: none;
+}
+#video::-webkit-media-controls-toggle-closed-captions-button {
+  background-color: red;
+  display: none;
+}
+#video::-webkit-media-controls-volume-slider {
+  background-color: red;
+  display: none;
+}
+#video::-webkit-media-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+#custom_seekbar_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position:absolute;
+  width: 100vw;
+  height: 100vh; */
+}
+#custom-seekbar {
+  cursor: pointer;
+  height: 10px;
+  margin-bottom: 10px;
+  outline: thin solid orange;
+  overflow: hidden;
+  position: relative;
+  width: 90%;
+  z-index: 5555;
+  top: 75%;
+}
+#custom-seekbar span {
+  background-color: orange;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 0px;
+}
+
+/* following rule is for hiding Stack Overflow's console  */
+.as-console-wrapper {
+  display: none !important;
+}
+
+div#gameInstruction_game,
+#tutorialsection {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 22;
+  animation: count_animate13 4s linear;
+  /* animation-delay: 7s; */
+  scale: 1;
+  z-index: 44444444;
+}
+#tutorialsection {
+  animation: tutorial-animation 0.3s infinite alternate;
+}
+@keyframes tutorial-animation {
+  0% {
+    scale: 0.8;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+div#gameInstruction_game h3,
+div#gameInstruction_game h1,
+#tutorialsection h1,
+#tutorialsection h3 {
+  transform: skewX(0deg) !important;
+  font-family: 'Camel' !important;
+  background: -webkit-linear-gradient(
+    75deg,
+    rgba(242, 242, 242, 1) 15%,
+    rgba(125, 125, 125, 1) 50%,
+    rgba(242, 242, 242, 1) 85%
+  ) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+div#gameInstruction_game h3,
+#tutorialsection h3 {
+  font-size: 25px;
+}
+div#gameInstruction_game h1,
+#tutorialsection h1 {
+  font-size: 60px;
+}
+
+.game_start_botton {
+  cursor: pointer;
+  margin-top: 50px;
+}
+@media (min-width: 500px) {
+  .next__button.game_start_botton {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@keyframes count_animate13 {
+  0% {
+    scale: 0;
+  }
+  10% {
+    scale: 1;
+  }
+  95% {
+    scale: 1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+video#gameSoundVideo {
+  position: absolute;
+  z-index: -222222222222222;
+  opacity: 0;
+}
+div#gameconfetti {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+}
+div#gameconfetti img {
+  width: 100%;
+  height: 100%;
+}
+
+div#fakeRoadBreaker {
+  position: absolute;
+  bottom: 150px;
+  right: -200px;
+}
+div#fakeRoadBreaker img {
+  width: 140px;
+  position: absolute;
+}
+
+@keyframes animation-breaker {
+  0% {
+    scale: 0.8;
+  }
+  100% {
+    scale: 1;
+  }
+}
+video#fakevideo {
+  position: absolute;
+  background: rgba(255, 0, 0, 0);
+  width: 10px;
+  height: 1px;
+  bottom: 2000px;
+  left: 5000px;
+}
+video#fakevideo source {
+  position: absolute;
+  background: rgba(255, 0, 0, 0);
+  width: 10px;
+  height: 1px;
+  bottom: 2000px;
+  left: 5000px;
+}
+
+.display_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.mobile_container {
+  max-width: 460px;
+  overflow: hidden;
+  position: relative;
+}
+video#video {
+  width: 100%;
+  height: 100%;
+}
+img.pre_game_background,
+.post_game_background {
+  width: 100%;
+  height: auto;
+}
+img.pre_game_next_button {
+  width: 277px;
+  height: 100px;
+  cursor: pointer;
+}
+.pre_game_next_button_container {
+  position: absolute;
+  top: 123px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.post_game_next_button_container {
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.post_game_next_button {
+  position: absolute;
+  cursor: pointer;
+}
+#post_game_animation{
+  transform: scale(0);
+}
+img.button_style {
+  width: 240px;
+  cursor: pointer;
+}

@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::placeholder {
+  color: red;
+}
+@font-face {
+  font-family: SiyamRupali;
+  src: url(./fonts/SiyamRupaliANSI.ttf);
+  
+}
+.bangla-font{
+  font-family: 'SiyamRupali' !important;
+}
+.font-face-camel {
+  font-family: 'Camel' !important;
+}
+
+.font-face-calibre {
+  font-family: 'Calibre' !important;
+}
+
+.font-face-poppins-light {
+  font-family: 'Poppins-Light' !important;
+}
+
+.font-face-poppins-medium {
+  font-family: 'Poppins-Medium' !important;
+}
+
+.font-face-poppins-bold {
+  font-family: 'Poppins-Bold' !important;
+}
+
+.font-face-graphik-black {
+  font-family: 'GraphikBlack' !important;
+}
+
+.label {
+  margin-bottom: 20px !important;
+  color: white;
+}
+
+.mb20 {
+  margin-bottom: 20px !important;
+}
+
+.mb30 {
+  margin-bottom: 30px !important;
+}
+
+.width100 {
+  width: 100% !important;
+}
+
+.btn {
+  background-color: #115293 !important;
+  color: white !important;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+@media screen and (max-height: 400px) {
+  .capture a img {
+    width: 30px;
+    height: 30px;
+  }
+}
+.row {
+  display: flex !important;
+  justify-content: center !important;
+  flex-direction: row;
+}
+.column {
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: column;
+}
+.center {
+  max-width: 460px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.center-horizontal {
+  display: flex !important;
+  justify-content: center !important;
+}
+.center-vertical {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+}
+
+.ar-button0 {
+  box-shadow: 0px 0px 26px 1px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 0px 26px 1px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px 0px 26px 1px rgba(255, 255, 255, 1);
+}
+
+.ar-button1 {
+  box-shadow: 0px 0px 26px 10px rgba(222, 120, 195, 1);
+  -webkit-box-shadow: 0px 0px 26px 10px rgba(222, 120, 195, 1);
+  -moz-box-shadow: 0px 0px 26px 10px rgba(222, 120, 195, 1);
+}
+
+.ar-button2 {
+  box-shadow: 0px 0px 26px 10px rgba(1, 139, 221, 1);
+  -webkit-box-shadow: 0px 0px 26px 10px rgba(1, 139, 221, 1);
+  -moz-box-shadow: 0px 0px 26px 10px rgba(1, 139, 221, 1);
+}
+
+.ar-button-div {
+  width: 40%;
+}
+
+.preview-buttons h2 {
+  background: -webkit-linear-gradient(
+    75deg,
+    rgba(242, 242, 242, 1) 15%,
+    rgba(125, 125, 125, 1) 50%,
+    rgba(242, 242, 242, 1) 85%
+  ) !important;
+  transform: skewX(0deg);
+  font-family: 'Camel' !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-size: 15px;
+}
+
+.color-white,
+.MuiTableCell-head {
+  color: white !important;
+}
+
+.MuiAppBar-colorPrimary {
+  background-color: black !important;
+}
+
+@media screen and (max-width: 320px) {
+  .preview-buttons h2 {
+    font-size: 13px;
+  }
+}
+
+.preview-box-shadow {
+  box-shadow: 1px -1px 5px 4px rgba(107, 106, 106, 1);
+  -webkit-box-shadow: 1px -1px 5px 4px rgba(107, 106, 106, 1);
+  -moz-box-shadow: 1px -1px 5px 4px rgba(107, 106, 106, 1);
+}
+
+@media screen and (max-width: 470px) {
+  .ar-button-div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ar-button-div {
+    width: 60%;
+  }
+}

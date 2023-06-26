@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta
+      name="viewport"
+      content="minimum-scale=1, initial-scale=1, width=device-width"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Demo on adding virtual background to a live video stream in the browser"
+    />
+    <!-- WebAssembly SIMD localhost -->
+    <meta
+      http-equiv="origin-trial"
+      content="AsMmosnWaxFkDGFQwksPO8Q1xBi6DI9g5s8xJzIbH2Oj2rmSEgH+Mxfp2DRH1pqwC63eL7UBdqJ42OHxlgnqRAMAAABSeyJvcmlnaW4iOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJmZWF0dXJlIjoiV2ViQXNzZW1ibHlTaW1kIiwiZXhwaXJ5IjoxNjIzODAxNTk5fQ=="
+    />
+    <!-- WebAssembly SIMD volcomix.github.io -->
+    <meta
+      http-equiv="origin-trial"
+      content="AlxPo/PmcsQjg19KZiW6iITwQCKgA9nyPThRtc9PZkdECeX0LLcgI9bWsckNpn/UPVLl/nNELtXA+XkwHP3a9QgAAABbeyJvcmlnaW4iOiJodHRwczovL3ZvbGNvbWl4LmdpdGh1Yi5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViQXNzZW1ibHlTaW1kIiwiZXhwaXJ5IjoxNjIzODAxNTk5fQ=="
+    />
+    <link rel="apple-touch-icon" href="./logo192.png" />
+    <link rel="preload"  href="/src/fonts/Camel.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload"  href="/src/fonts/GraphikBlack.otf" as="font" type="font/otf" crossorigin>
+    <!-- <link rel="preload"  href="/src/fonts/GraphikBlackItalic.otf" as="font" type="font/otf" crossorigin> -->
+    <!-- <link rel="preload"  href="/src/fonts/GraphikLight.otf" as="font" type="font/otf" crossorigin> -->
+    <link rel="preload"  href="/src/fonts/GraphikRegular.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload"  href="/src/fonts/GraphikBold.otf" as="font" type="font/otf" crossorigin>
+    <!-- <link rel="preload"  href="/src/fonts/Calibre.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload"  href="/src/fonts/Poppins-Bold.ttf" as="font" type="font/otf" crossorigin>
+    <link rel="preload"  href="/src/fonts/Poppins-Light.ttf" as="font" type="font/otf" crossorigin>
+    <link rel="preload"  href="/src/fonts/Poppins-Medium.ttf" as="font" type="font/otf" crossorigin> -->
+
+    <meta
+      http-equiv="origin-trial"
+      content="AsMmosnWaxFkDGFQwksPO8Q1xBi6DI9g5s8xJzIbH2Oj2rmSEgH+Mxfp2DRH1pqwC63eL7UBdqJ42OHxlgnqRAMAAABSeyJvcmlnaW4iOiJodHRwOi8vbG9jYWxob3N0OjMwMDAiLCJmZWF0dXJlIjoiV2ViQXNzZW1ibHlTaW1kIiwiZXhwaXJ5IjoxNjIzODAxNTk5fQ=="
+    />
+    <!-- WebAssembly SIMD volcomix.github.io -->
+    <meta
+      http-equiv="origin-trial"
+      content="AlxPo/PmcsQjg19KZiW6iITwQCKgA9nyPThRtc9PZkdECeX0LLcgI9bWsckNpn/UPVLl/nNELtXA+XkwHP3a9QgAAABbeyJvcmlnaW4iOiJodHRwczovL3ZvbGNvbWl4LmdpdGh1Yi5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViQXNzZW1ibHlTaW1kIiwiZXhwaXJ5IjoxNjIzODAxNTk5fQ=="
+    />
+    <link rel="apple-touch-icon" href="./logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="./manifest.json" />
+    <!--
+      Notice the use of . in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "./favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Creative Icon</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+
+    <script src="./tflite/tflite.js"></script>
+    <script src="./tflite/tflite.js"></script>
+    <script src="./tflite/tflite-simd.js"></script>
+    
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"
+      
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js"
+      
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+      
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/selfie_segmentation/selfie_segmentation.js"
+      
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"
+      
+    ></script>
+    <script
+      src="./MarchingSquares.js"
+      
+    ></script>
+    <script type="text/javascript"
+      src="./indexdb.js"
+    ></script>
+    <script src='https://unpkg.com/feather-icons@4.24.1/dist/feather.min.js'></script>
+
+</html>

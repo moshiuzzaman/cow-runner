@@ -1,0 +1,56 @@
+* {
+}
+@font-face {
+  font-family: 'Camel';
+  src: local('Camel'), url('./fonts/Camel.otf') format('truetype');
+  /* src: local('Camel'),
+    url('https://cdn.jsdelivr.net/gh/moshiuzzaman/CDN@master/Camel.otf')
+      format('truetype'); */
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: local('Calibre'), url('./fonts/Calibre.otf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: local('Poppins-Light'),
+    url('./fonts/Poppins-Light.ttf') format('truetype');
+  font-weight: light;
+}
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: local('Poppins-Medium'),
+    url('./fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: medium;
+}
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: local('Poppins-Bold'), url('./fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'GraphikLight';
+  src: local('GraphikLight'), url('./fonts/GraphikLight.otf') format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'GraphikRegular';
+  src: local('GraphikRegular'),
+    url('./fonts/GraphikRegular.otf') format('truetype');
+  font-weight: medium;
+}
+@font-face {
+  font-family: 'GraphikBold';
+  src: local('GraphikBold'), url('./fonts/GraphikBold.otf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'GraphikBlack';
+  src: local('GraphikBlack'), url('./fonts/GraphikBlack.otf') format('truetype');
+  font-weight: bold;
+}
